@@ -5,8 +5,12 @@ Gem::Specification.new do |s|
   s.description = s.summary
   s.authors = ['Mandrill Devs']
   s.email = 'community@mandrill.com'
-  s.files = ['lib/mandrill.rb', 'lib/mandrill/api.rb', 'lib/mandrill/errors.rb']
+  s.files = ['lib/mandrill.rb', 'lib/mandrill/api.rb']
   s.homepage = 'https://github.com/jasonayre/mandrill-rb'
   s.add_dependency 'json', '>= 1.7.7', '< 2.0'
   s.add_dependency 'excon', '>= 0.16.0', '< 1.0'
+
+  s.add_development_dependency "bundler"
+  s.add_development_dependency "rake"
+  s.add_development_dependency "rspec"
 end
