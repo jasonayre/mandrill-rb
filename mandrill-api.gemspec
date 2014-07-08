@@ -1,6 +1,8 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
+require 'mandrill/version'
+
 Gem::Specification.new do |s|
   s.name = 'mandrill-rb'
   s.version = Mandrill::VERSION
